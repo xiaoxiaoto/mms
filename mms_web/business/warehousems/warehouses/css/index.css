@@ -1,0 +1,61 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 97%;
+}
+
+.site-warehouses-content{
+    margin: 15px;
+    padding: 0;
+    width: 98%;
+    height: 100%;
+}
+.site-warehouses-map{
+    width: 100%;
+    height: 50%;
+}
+.site-warehouses-map .layui-field-box{
+    width: 100%;
+    height: 100%;
+}
+.site-warehouses-map .map-view{
+    width: 98%;
+    height: 96%;
+}
+.site-warehouses-table{
+     width: 100%;
+     height: 46%;
+ }
+.site-warehouses-table .layui-field-box{
+     width: 100%;
+     height: 100%;
+ }
+.site-warehouses-table .layui-form{
+     width: 98%;
+     height: 100%;
+ }
+
+.site-warehouses-detailstitle {
+    font-weight:bold;
+}
+
+.site-warehouses-formright{
+    float: right;
+}
+
+
+
+/**datatable样式**/
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    margin-right: 2%;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    margin-right: 2%;
+}
+.table-box {
+    width: 98%!important;
+}
+

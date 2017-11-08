@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>采购管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/layui.css">
+</head>
+<body>
+<div id="data-table" class="site-purchasereceiptlists-details">
+    <fieldset class="layui-elem-field">
+        <div class="layui-field-box">
+            <form class="layui-form" action="">
+                <table class="layui-table">
+                    <tr>
+                        <td><span class="site-purchasereceiptlists-detailstitle">单号</span></td>
+                        <td><input id="purchasereceiptlists-sequencenumber"type="text"  name="sequenceNumber" lay-verify="required" autocomplete="off" placeholder="请输入设备序列号" class="layui-input"></td>
+                        <td><span class="site-purchasereceiptlists-detailstitle">设备名称</span></td>
+                        <td><input id="purchasereceiptlists-ename" type="text" name="ename" lay-verify="required" autocomplete="off" placeholder="请输入设备名称" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-purchasereceiptlists-detailstitle">采购数量</span></td>
+                        <td><input id="purchasereceiptlists-quantity" type="text" name="quantity" lay-verify="required|number" autocomplete="off" placeholder="请输入采购数量" class="layui-input"></td>
+                        <td><span class="site-purchasereceiptlists-detailstitle">入库数量</span></td>
+                        <td><input id="purchasereceiptlists-intoquantity" type="text" name="quantity" lay-verify="required|number" autocomplete="off" placeholder="请输入入库数量" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-purchasereceiptlists-detailstitle">状态</span></td>
+                        <td>
+                            <select id="purchasereceiptlists-state" name="state" lay-verify="required">
+                                <option></option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="layui-input-block">
+                                <button id="purchasereceiptlist-submit"class="layui-btn" lay-submit="" lay-filter="purchasereceiptlist-submit">提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </fieldset>
+</div>
+</div>
+
+<script src="../../../system/dist/layui/1.0.9/layui.js"></script>
+<script src="../../../system/dist/common/global.js"></script>
+<script src="js/update.js"></script>
+
+
+</body>
+</html>

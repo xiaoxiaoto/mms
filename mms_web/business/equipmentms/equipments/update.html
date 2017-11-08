@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>设备管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/layui.css">
+</head>
+<body>
+<div id="data-table" class="site-equipments-details">
+    <fieldset class="layui-elem-field">
+        <div class="layui-field-box">
+            <form class="layui-form" action="">
+                <table class="layui-table">
+                    <tr>
+                        <td><span class="site-equipments-detailstitle">序列号</span></td>
+                        <td><input id="equipments-serialnumber"type="text" name="serialNumber" lay-verify="required" autocomplete="off" placeholder="请输入设备序列号" class="layui-input"></td>
+                        <td><span class="site-equipments-detailstitle">设备名称</span></td>
+                        <td><input id="equipments-ename" type="text" name="ename" lay-verify="required" autocomplete="off" placeholder="请输入设备名称" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-equipments-detailstitle">设备类型</span></td>
+                        <td>
+                            <select id="equipments-classify" name="eclassify" lay-verify="required">
+                                <option></option>
+                            </select>
+                        </td>
+                        <td><span class="site-equipments-detailstitle">设备分类</span></td>
+                        <td>
+                            <select id="equipments-type" name="etype" lay-verify="required">
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-equipments-detailstitle">设备规格</span></td>
+                        <td><input id="equipments-specifications"type="text" name="specifications" lay-verify="required" autocomplete="off" placeholder="请输入设备规格" class="layui-input"></td>
+                        <td><span class="site-equipments-detailstitle">PN/FRU编号</span></td>
+                        <td><input id="equipments-pnfru"type="text" name="pnfru"  autocomplete="off" placeholder="请输入PN/FRU编号" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-equipments-detailstitle">生产厂商</span></td>
+                        <td><input id="equipments-manufacturer" type="text" name="manufacturer"  autocomplete="off" placeholder="请输入生产厂商" class="layui-input"></td>
+                        <td><span class="site-equipments-detailstitle">集成厂商</span></td>
+                        <td><input id="equipments-integrator"type="text" name="integrator"  autocomplete="off" placeholder="请输入集成厂商" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-equipments-detailstitle">设备状态</span></td>
+                        <td>
+                            <select id="equipments-state" name="state" lay-verify="required">
+                                <option></option>
+                            </select>
+                        </td>
+                        <td><span class="site-equipments-detailstitle">设备寿命</span></td>
+                        <td><input id="equipments-life" type="text" name="life" lay-verify="required|number"  autocomplete="off" placeholder="请输入设备寿命" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="layui-input-block">
+                                <button id="equipment-submit"class="layui-btn" lay-submit="" lay-filter="equipment-submit">提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </fieldset>
+</div>
+</div>
+
+<script src="../../../system/dist/layui/1.0.9/layui.js"></script>
+<script src="../../../system/dist/common/global.js"></script>
+<script src="js/update.js"></script>
+
+
+</body>
+</html>

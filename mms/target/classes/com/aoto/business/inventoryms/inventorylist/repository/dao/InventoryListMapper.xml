@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aoto.business.inventoryms.inventorylist.repository.dao.IInventoryListIbaitsDao">  
+	<select id="queryInventoryListsByEid" resultType="com.aoto.business.inventoryms.inventorylist.repository.pojo.InventoryList" parameterType="int">
+	 	select *  from mms_inventorylist where eid=#{eid}
+	</select>
+	<select id="queryInventoryListsByWid" resultType="com.aoto.business.inventoryms.inventorylist.repository.pojo.InventoryList" parameterType="int">
+	 	select *  from mms_inventorylist where wid=#{wid}
+	</select>
+	<select id="queryInventoryListsBySid" resultType="com.aoto.business.inventoryms.inventorylist.repository.pojo.InventoryList" parameterType="int">
+	 	select *  from mms_inventorylist where sid=#{sid}
+	</select>
+	<select id="queryInventoryListsByWSid" resultType="com.aoto.business.inventoryms.inventorylist.repository.pojo.InventoryList" >
+	 	select *  from mms_inventorylist where  wid=#{wid} and sid=#{sid}
+	</select>
+	<delete id="deleteInventoryListsByWSid"  >  
+       delete from  mms_inventorylist where wid=#{wid} and sid=#{sid}
+    </delete>
+</mapper>

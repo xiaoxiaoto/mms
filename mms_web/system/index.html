@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>系统主页面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="dist/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="fonts/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/base.css" />
+</head>
+<body>
+<!--页面布局头部-->
+<div id="layout-header" class="layout-header">
+    <div id="bg">
+    </div>
+</div>
+<!--/.layout-header 页面布局头部-->
+
+<!--页面布局内容区-->
+<div id="layout-content" class="layout-content">
+    <!--菜单区-->
+    <div id="page-left" class="page-left">
+        <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+
+                <!--<div id="toggle-menu-open" class="toggle-menu toggle-menu-open icon-indent-left" style="display: block;"></div>-->
+            <div id="toggle-menu-open" class="toggle-menu toggle-menu-open icon-indent-left" style="display: block;"></div>
+            <!--<div id="toggle-menu-close" class="toggle-menu toggle-menu-close icon-indent-right"></div>-->
+
+                <div id="toggle-menu-close" class="toggle-menu toggle-menu-close icon-indent-right"></div>
+
+        </div>
+        <ul class="nav nav-list" id="nav-list"></ul>
+
+
+    </div><!--/.page-left 页面布局内容区-->
+
+    <!--页面内容区-->
+    <div id="page-content" class="page-content">
+
+
+        <!--内容区头部TAB区-->
+        <div class="content-tabs" style="width:100%;">
+            <button class="roll-nav roll-left J_tabLeft"><i class="icon-fast-backward"></i>
+            </button>
+            <nav class="page-tabs J_menuTabs">
+                <div ID="page-tabs-content" class="page-tabs-content">
+                    <a href="javascript:;" class="active J_menuTab" name="home">首页</a>
+                </div>
+            </nav>
+            <button class="roll-nav roll-right J_tabRight"><i class="icon-fast-forward"></i>
+            </button>
+
+            <div class="btn-group roll-right">
+                <div id="context-menu">
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a tabindex="-1">定位当前选项卡</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1">关闭全部选项卡</a></li>
+                        <li><a tabindex="-1">关闭其他选项卡</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+        </div><!--/ .content-tabs内容区头部TAB区-->
+
+        <!--页面内容区-->
+        <div id="iframe" class="J_mainContent" style="width:100%;height: 100%;'">
+            <iframe id="iframe_home" name="home" class="iframe-item" width="100%" height="100%"
+                    src="../business/allocationms/allocationlists/index.html" frameborder="0" seamless></iframe>
+        </div><!--/ .J_mainContent页面内容区-->
+
+    </div><!--/.page-content 页面内容区-->
+</div><!--/.layout-content 页面布局内容区-->
+
+<!--<script  type="text/javascript" src="dist/jquery/2.2.1/jquery-2.2.1.min.js"></script>-->
+<script  type="text/javascript" src="dist/jquery/1.9.0/jquery.js"></script>
+<script  type="text/javascript" src="dist/icheck/skins/icheck.js"></script>
+<script src="dist/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="dist/bootstrap/contextmenu/bootstrap-contextmenu.js"></script>
+<script src="dist/bootstrap/contextmenu/gulpfile.js"></script>
+<!--<script  type="text/javascript" src="js/frame.js"></script>-->
+<script  type="text/javascript" src="js/frameLayout.js"></script>
+<script  type="text/javascript" src="js/menuTree.js"></script>
+<script  type="text/javascript" src="js/headerTabs.js"></script>
+<script  type="text/javascript" src="js/base.js"></script>
+</body>
+</html>

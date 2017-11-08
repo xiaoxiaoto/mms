@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>值域管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/layui.css">
+</head>
+<body>
+<div id="data-table" class="site-domains-details">
+    <fieldset class="layui-elem-field">
+        <div class="layui-field-box">
+            <form class="layui-form" action="">
+                <table class="layui-table">
+                    <tr>
+                        <td><span class="site-domains-detailstitle">描述</span></td>
+                        <td><input type="text" name="describes" lay-verify="required" autocomplete="off" placeholder="请输入描述" class="layui-input"></td>
+                        <td><span class="site-domains-detailstitle">业务类型</span></td>
+                        <td><input type="text" name="businessType" lay-verify="required" autocomplete="off" placeholder="请输入业务类型" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-domains-detailstitle">值域键</span></td>
+                        <td><input type="text" name="domainKey" lay-verify="required" autocomplete="off" placeholder="请输入值域键" class="layui-input"></td>
+                        <td><span class="site-domains-detailstitle">值域值</span></td>
+                        <td><input type="text" name="domainValue"  autocomplete="off" placeholder="请输入值域值" class="layui-input"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="layui-input-block">
+                                <button id="domain-submit"class="layui-btn" lay-submit="" lay-filter="domain-submit">提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </fieldset>
+</div>
+</div>
+
+<script src="../../../system/dist/layui/1.0.9/layui.js"></script>
+<script src="../../../system/dist/common/global.js"></script>
+<script src="js/add.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+/**datatable样式**/
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+}
+.table-box {
+    width: 100%!important;
+}
+.table-container{
+    width: 49%;
+}
+.extra-container{
+    margin-left: 1.6%;
+}
+
+.inventory-select:hover{
+    cursor:pointer;
+}
+.table-input-quantity{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    width: 40%;
+    float: left;
+}
+.table-btn-plus{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+}
+.table-btn-minus{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+}
+.active{
+  color: #33ADD6;
+}

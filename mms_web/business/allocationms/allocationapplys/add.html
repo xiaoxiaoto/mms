@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>调拨管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/layui.css">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/modules/datatable/datatable.css">
+    <link rel="stylesheet" href="../../../system/fonts/css/font-awesome.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../../system/fonts/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+<div id="data-table" class="site-allocationapplys-details">
+    <fieldset class="layui-elem-field">
+        <div class="layui-field-box">
+            <form class="layui-form" action="">
+                <table class="layui-table">
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">申领人</span></td>
+                        <td><input id="allocationapplys-applicant" type="text" name="applicant" lay-verify="required" autocomplete="off" placeholder="请输入申领人" class="layui-input"></td>
+                        <td><span class="site-allocationapplys-detailstitle">流转状态</span></td>
+                        <td>
+                            <select id="allocationapplys-circulation" name="circulation" lay-verify="required">
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">申请时间</span></td>
+                        <td><input id="allocationapplys-applydate" type="text" name="applyDate"  lay-verify="date" placeholder="yyyy-mm-dd" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})"></td>
+                        <td><span class="site-allocationapplys-detailstitle">归还时间</span></td>
+                        <td><input id="allocationapplys-returndate"type="text" name="returnDate"  lay-verify="date" placeholder="yyyy-mm-dd" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">原因</span></td>
+                        <td colspan="3"><textarea id="allocationapplys-reason" name="reason" placeholder="请输入内容" class="layui-textarea"></textarea></td>
+                    </tr>
+                </table>
+                <div class="layui-input-block" style="display: none;">
+                    <button id="allocationapply-submit"class="layui-btn"lay-submit lay-filter="allocationapply-submit">提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </form>
+
+            <div class="layui-inline table-container">
+                    <div calss="inventorys-container">
+                        <table class="table-box table-sort" id="inventorys-table">
+                            <thead>
+                            <tr>
+                                <th>编号</th>
+                                <th>仓库名称</th>
+                                <th>垛位编号</th>
+                                <th>设备</th>
+                                <th>库存</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <div class="layui-inline table-container extra-container">
+                <div calss="applys-container">
+                    <table class="table-box table-sort" id="applys-table">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>仓库名称</th>
+                            <th>垛位编号</th>
+                            <th>设备</th>
+                            <th>库存</th>
+                            <th>申请数量</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="layui-input-block">
+                <button id="rallocationapply-submit"class="layui-btn">提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+
+        </div>
+    </fieldset>
+</div>
+</div>
+
+<script src="../../../system/dist/layui/1.0.9/layui.js"></script>
+<script src="../../../system/dist/common/global.js"></script>
+<script src="js/add.js"></script>
+
+
+</body>
+</html>

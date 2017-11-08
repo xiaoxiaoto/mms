@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aoto.business.equipments.repository.dao.IEquipmentIbaitsDao">  
+	<select id="queryEquipmentsByEname" resultType="com.aoto.business.equipments.repository.pojo.Equipment" parameterType="string">
+	 	select *  from mms_equipments where ename=#{name}
+	</select>
+	<select id="queryEquipmentsByEclassify" resultType="com.aoto.business.equipments.repository.pojo.Equipment" parameterType="string">
+	 	select *  from mms_equipments where eclassify=#{classify}
+	</select>
+</mapper>

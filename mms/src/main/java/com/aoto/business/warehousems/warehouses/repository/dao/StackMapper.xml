@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aoto.business.warehousems.warehouses.repository.dao.IWarehouseIbaitsDao">  
+	<select id="queryWarehousesByWname" resultType="com.aoto.business.warehousems.warehouses.repository.pojo.Warehouse" parameterType="string">
+	 	select *  from mms_warehouses where wname=#{name}
+	</select>
+	<select id="queryWarehousesByWid" resultType="com.aoto.business.warehousems.warehouses.repository.pojo.Warehouse" parameterType="string">
+	 	select *  from mms_warehouses where wid=#{code}
+	</select>
+</mapper>

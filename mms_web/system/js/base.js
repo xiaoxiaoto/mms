@@ -1,0 +1,102 @@
+/**
+ * Created by Administrator on 2017/3/30.
+ */
+var data=[{
+    "id":"550E8400-E29B-11D4-A716-446655440000",
+    "icon":"icon-home",
+    "title":"仓库管理",
+    "children":[{
+        "id":"550E8400-E29B-11D4-A716-446655240000",
+        "icon":"",
+        "title":"仓库管理",
+        "url":"../business/warehousems/warehouses/index.html"
+    }]
+},{
+    "id":"550E8400-E29B-11D4-A716-446655443212",
+    "icon":"icon-hdd",
+    "title":"设备管理",
+    "children":[{
+        "id":"550E8400-E29B-11D4-A716-446654643212",
+        "icon":"",
+        "title":"设备管理",
+        "url":"../business/equipmentms/equipments/index.html"
+    }]
+},{
+    "id":"550E8400-E29B-11D4-A732-419124423612",
+    "icon":"icon-signin",
+    "title":"采购管理",
+    "children":[{
+        "id":"550E8400-E29B-22D4-A732-419124423612",
+        "icon":"",
+        "title":"采购申请",
+        "url":"../business/purchasems/purchaseapplys/index.html"
+    },{
+        "id":"550E8400-E45B-22D4-A756-419124423612",
+        "icon":"",
+        "title":"回执单",
+        "url":"../business/purchasems/purchasereceiptlists/index.html"
+    }]
+},{
+    "id":"550E8400-E29B-11D4-A716-446654343612",
+    "icon":"icon-signout",
+    "title":"调拨管理",
+    "children":[{
+        "id":"550E8400-E29B-11D4-A716-446124343612",
+        "icon":"",
+        "title":"调拨申请",
+        "url":"../business/allocationms/allocationapplys/index.html"
+    },{
+        "id":"550E8400-E29B-11D4-A716-419124423612",
+        "icon":"",
+        "title":"调拨单",
+        "url":"../business/allocationms/allocationlists/index.html"
+    }]
+},{
+    "id":"550E8400-E45B-24D4-A756-419128423612",
+    "icon":"icon-inbox",
+    "title":"库存管理",
+    "children":[{
+        "id":"550E8400-E45B-24D4-A846-419128423612",
+        "icon":"",
+        "title":"库存清单",
+        "url":"../business/inventoryms/inventorylists/index.html"
+    },{
+        "id":"340E8435-E45B-24D4-A846-419128423612",
+        "icon":"",
+        "title":"入库清单",
+        "url":"../business/inventoryms/storagelists/index.html"
+    },{
+        "id":"550E8435-E45B-24D4-A846-419128423612",
+        "icon":"",
+        "title":"出库清单",
+        "url":"../business/inventoryms/supplyedlists/index.html"
+    }]
+},{
+    "id":"340E8435-E45B-24D4-A846-410328423612",
+    "icon":"icon-tasks",
+    "title":"设备使用",
+    "children":[{
+        "id":"340E7438-E45B-24D4-A846-410328423612",
+        "icon":"",
+        "title":"使用明细",
+        "url":"http://madebyevan.com/webgl-water/"
+    }]
+},{
+    "id":"340E7438-E45B-24D4-A846-410399423612",
+    "icon":"icon-info-sign",
+    "title":"值域管理",
+    "children":[{
+        "id":"340E7438-E45B-24D4-A846-410399423612",
+        "icon":"",
+        "title":"值域管理",
+        "url":"../business/domainms/domainlist/index.html"
+    }]
+}];
+
+/**页面初始化**/
+$(function () {
+    menuTree.initMenuTree(data);
+    frameLayout.initLayout();
+    headerTabs.initTab();
+});
+

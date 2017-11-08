@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aoto.business.inventoryms.applicationillustrate.repository.dao.IApplicationIllustrateIbaitsDao">  
+    <select id="queryApplicationIllustratesByEid" resultType="com.aoto.business.inventoryms.applicationillustrate.repository.pojo.ApplicationIllustrate" parameterType="int">
+	 	select *  from mms_applicationillustrate where eid=#{eid}
+	</select>
+</mapper>

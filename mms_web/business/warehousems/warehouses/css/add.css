@@ -1,0 +1,15 @@
+.legend-remove{
+    margin-left: 20px;
+    font-family: layui-icon !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+}
+.legend-add:hover{
+    cursor: pointer;
+}
+.legend-remove:hover{
+    cursor: pointer;
+}

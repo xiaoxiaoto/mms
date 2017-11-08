@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aoto.business.purchasems.applysdetails.repository.dao.IApplysDetailIbaitsDao"> 
+	<select id="queryApplysDetailsByAid" resultType="com.aoto.business.purchasems.applysdetails.repository.pojo.ApplysDetail" parameterType="int">
+	   select * from mms_purchaseapplysdetails where aid=#{aid}
+	</select> 
+	
+	<delete id="deleteByAid"   parameterType="int" >  
+       delete from  mms_purchaseapplysdetails where aid=#{aid}
+    </delete> 
+</mapper>

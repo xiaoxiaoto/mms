@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>调拨管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/layui.css">
+    <link rel="stylesheet" href="../../../system/dist/layui/1.0.9/css/modules/datatable/datatable.css">
+</head>
+<body>
+    <div id="data-table" class="site-allocationapplys-details">
+        <fieldset class="layui-elem-field">
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">设备概要</span></td>
+                        <td><span id="site-allocationapplys-equipments"></span></td>
+                        <td><span class="site-allocationapplys-detailstitle">申领人</span></td>
+                        <td><span id="site-allocationapplys-applicant"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">流转状态</span></td>
+                        <td><span id="site-allocationapplys-circulation"></span></td>
+                        <td><span class="site-allocationapplys-detailstitle">申请原因</span></td>
+                        <td><span id="site-allocationapplys-reason"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="site-allocationapplys-detailstitle">申请时间</span></td>
+                        <td><span id="site-allocationapplys-applydate"></span></td>
+                        <td><span class="site-allocationapplys-detailstitle">归还时间</span></td>
+                        <td><span id="site-allocationapplys-returndate"></span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <table class="table-box table-sort" id="data-table-details">
+                                <thead>
+                                <tr>
+                                    <th>编号</th>
+                                    <th>仓库名称</th>
+                                    <th>垛位编号</th>
+                                    <th>设备</th>
+                                    <th>申请数量</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<script src="../../../system/dist/layui/1.0.9/layui.js"></script>
+<script src="../../../system/dist/common/global.js"></script>
+<script src="js/details.js"></script>
+
+
+</body>
+</html>

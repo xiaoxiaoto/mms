@@ -1,0 +1,80 @@
+# PROFILES
+## dev | prod | test
+spring.profiles.active=dev
+
+# EMBEDDED SERVER CONFIGURATION (ServerProperties)
+server.port=8888
+server.session-timeout=30
+server.context-path=/mms/rest
+# server.address=
+server.tomcat.max-threads=0
+server.tomcat.uri-encoding=UTF-8
+server.tomcat.basedir=C:/springboot-tomcat-tmp
+logging.path=C:/springboot-tomcat-tmp
+logging.file=myapp.log    
+
+#DATASOURCE  FOR MYSQL
+spring.datasource.url = jdbc:mysql://localhost:3306/mms
+spring.datasource.username = root
+spring.datasource.password = 612526zhao
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+spring.datasource.max-active=0
+spring.datasource.max-idle=0
+spring.datasource.min-idle=0
+spring.datasource.max-wait=10000
+spring.datasource.max-wait-millis=31536000
+
+#ININT DATABACE
+#spring.datasource.schema=classpath:import.sql
+
+#JPA HIBERNATE IMPROVED
+# Specify the DBMS
+spring.jpa.database = MYSQL
+# Show or not log for each sql query
+spring.jpa.show-sql = true
+# Hibernate ddl auto (create, create-drop, update,validate)
+sring.jpa.hibernate.ddl-auto = create
+# Naming strategy
+spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
+# stripped before adding them to the entity manager)
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+#MYBATIS
+mybatis.type-aliases-package=com.aoto
+mybatis.type-handlers-package=com.aoto
+mybatis.configuration.map-underscore-to-camel-case=true
+mybatis.configuration.default-fetch-size=100
+mybatis.configuration.default-statement-timeout=30
+mybatis.mapper-locations=classpath*:com/aoto/**/*Mapper.xml
+mybatis.configuration.mapUnderscoreToCamelCase=true
+mybatis.configuration.useColumnLabel=true
+
+## REDIS (REDISPROPERTIES)  
+#spring.redis.database=      
+spring.redis.host=localhost 
+#spring.redis.password= 
+spring.redis.port=6379 
+spring.redis.pool.max-idle=8 
+spring.redis.pool.min-idle=0  
+spring.redis.pool.max-active=8  
+spring.redis.pool.max-wait=-1  
+#spring.redis.sentinel.master= 
+#spring.redis.sentinel.nodes=
+
+
+# THYMELEAF (ThymeleafAutoConfiguration)  
+#spring.thymeleaf.prefix=classpath:/templates/  
+#spring.thymeleaf.suffix=.html  
+#spring.thymeleaf.mode=HTML5  
+#spring.thymeleaf.encoding=UTF-8  
+#spring.thymeleaf.content-type=text/html
+#spring.thymeleaf.cache=true
+
+
+file.handle.upload.rootpath=C:/MMSFiles/FileUpload
+file.handle.servicer.resource=C:/MMSFiles/ServicerResource
+file.handle.excl.export.rootpath=C:/MMSFiles/ExportTemplet
+file.handle.excl.import.rootpath=C:/MMSFiles/ImportTemplet
+
+
+
